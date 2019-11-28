@@ -1,0 +1,14 @@
+body {
+    color:black;
+    background-color:white;
+    background-image:url(pattern.png);
+    background-repeat:repeat;
+    background-color: red;;
+    }
+
+    .infos
+    {
+        background-color: yellow;
+        height: 100%;
+        color: #000;
+    }
