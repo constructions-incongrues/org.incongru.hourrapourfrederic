@@ -113,7 +113,6 @@
 	transform: scale(1) rotateY(180deg) translate(50px, -50px);
 	filter: blur(10px);
 }
-.vids {z-index: 1000;}
             body {
     color:black;
     background-color:white;
@@ -131,6 +130,7 @@
         margin-top: -20px;
         font-family: 'Faster One', cursive;
 font-family: 'Open Sans', sans-serif;
+z-index: 1!important;
     ;}
 
     @-webkit-keyframes rumble {
@@ -141,18 +141,21 @@ font-family: 'Open Sans', sans-serif;
     100% {-webkit-transform: translate(0px, 2px) rotate(0deg);}
 }
 
-.vids {margin-top: 200px;}
 .rumble, .rumble-hover:hover, .rumble-active:active {
     -webkit-animation: rumble .0925s infinite linear;
 }
 
+video {z-index: 1!important;text-align: left;margin-top: 9px;border: 10px solid yellow;}
         </style>
     </head>
 
     <body>
 
+        <img src="gateau.gif" />
 
-
+        <video controls width="700">
+            <source src="vids.mp4" type="video/mp4">
+        </video>
             <div class="animation1 set">
                     <div><img src="cd.png"></div>
                     <div><img src="cd.png"></div>
@@ -177,15 +180,15 @@ font-family: 'Open Sans', sans-serif;
                 </div>
 
                 <div class="animation1 set set3">
-                    <div><img src="cd.png"></div>
-                    <div><img src="cd.png"></div>
-                    <div><img src="cd.png"></div>
-                    <div><img src="cd.png"></div>
-                    <div><img src="cd.png"></div>
-                    <div><img src="cd.png"></div>
-                    <div><img src="cd.png"></div>
-                    <div><img src="cd.png"></div>
-                    <div><img src="cd.png"></div>
+                    <div><img src="gateau.gif"></div>
+                    <div><img src="gateau.gif"></div>
+                    <div><img src="gateau.gif"></div>
+                    <div><img src="gateau.gif"></div>
+                    <div><img src="gateau.gif"></div>
+                    <div><img src="gateau.gif"></div>
+                    <div><img src="gateau.gif"></div>
+                    <div><img src="gateau.gif"></div>
+                    <div><img src="gateau.gif"></div>
                 </div>
             
                 <div class="animation1 set set4">
@@ -213,22 +216,19 @@ font-family: 'Open Sans', sans-serif;
                 </div>
 
 <BR />
-<audio
-controls
-src="AnnivFred2.mp3" autoplay="autoplay">
-Your browser does not support the
-<code>audio</code> element.
-</audio>
 
-
-<div style="text-align: center;">
-
-        </div>
         <div class="infos">
+
             <h1> 38 ans </h1>
-            <img src="gateau.gif" />
             <h1 class="rumble">Que Dieu te Rue des Gardes</h1>
         </div>
+        <audio
+        controls
+        src="AnnivFred2.mp3" autoplay="autoplay">
+        Your browser does not support the
+        <code>audio</code> element.
+        </audio>
+
 
     </body>
 </html>
